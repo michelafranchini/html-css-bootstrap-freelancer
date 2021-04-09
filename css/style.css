@@ -1,0 +1,75 @@
+/* debug */
+[class*="col-"] {
+    background-color: aquamarine;
+    border: 1px solid black;
+    height: 100%;
+}
+hr {
+    border: 1px solid black;
+}
+/* debug */
+
+
+
+body {
+    text-align: center;
+}
+.container {
+    max-width: 1170px;
+}
+h2 {
+    text-transform: uppercase;
+}
+
+.white_text {
+    color: white;
+}
+/* header */
+header {
+    text-transform: uppercase;
+    width: 100%;
+}
+nav,
+.bg_darkgrey {
+    background-color: #2c3e50;
+    /* height: 80px; */
+}
+
+.bg_green {
+    background-color: #1abc9c ;
+}
+
+.jumbotron img {
+    width: 240px;
+}
+.list-inline {
+    text-decoration: none;
+}
+
+/* portfolio */
+.images img {
+    border-radius: 25px;
+    padding: 15px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* contact */
+.contact p {
+    text-align: left;
+}
+
+
+.form :last-child {
+    margin-top: 150px;
+}
+
+.contact a {
+    text-align: left;
+}
+
+/* footer */
+footer {
+    background-color: #3a546d ;
+}
