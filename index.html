@@ -26,10 +26,10 @@
                         <span class="icon-bar icon_bar"></span>
                         <span class="icon-bar icon_bar"></span>
                         </button>
-                        <a class="navbar-brand" href="#">start bootstrap</a>
+                        <a class="navbar-brand navbar_brand" href="#">start bootstrap</a>
                     </div>
-                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                        <ul class="nav navbar-nav navbar-right">
+                    <div class="collapse navbar-collapse ms_navbar_right" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav navbar-right ms_navbar_right">
                             <li><a href="#portfolio">portfolio</a></li>
                             <li><a href="#about">about</a></li>
                             <li><a href="#contact">contact</a></li>
@@ -45,14 +45,10 @@
                     <div class="row">
                         <div class="col-lg-8 col-lg-offset-2 col-sm-8 col-sm-offset-2 col-xs-12">
                             <img src="img/avatar.svg" alt="avatar" ">
-                            <div>
-                                <div class="ms_hr">
-                                    <hr>
-                                </div>
+                            <div class="white_text">
+                                <hr class="ms_hr">
                                 <i class="fas fa-star"></i>
-                                <div class="ms_hr">
-                                    <hr>
-                                </div>
+                                <hr class="ms_hr">  
                             </div>
                             <h1>start bootstrap</h1>
                             <p>Graphic Artist - Web Designer - Illustrator</p>
@@ -69,7 +65,11 @@
                 <div class="container">
                     <div class="row">
                         <h2>portfolio</h2>
-                        <span>decorazione</span>
+                        <div class="black_text">
+                            <hr class="ms_hr">
+                            <i class="fas fa-star"></i>
+                            <hr class="ms_hr"> 
+                        </div>
                         <div class="images">
                             <img src="img/cabin.png" alt="baita" class="col-lg-4 col-sm-6 col-xs-12 img-responsive">
                             <img src="img/cake.png" alt="cake" class="col-lg-4 col-sm-6 col-xs-12 img-responsive">
@@ -85,10 +85,15 @@
 
             <!-- about -->
             <section id="about" class="bg_green white_text text-center">
+                <h2>about</h2>
+                <div class="white_text">
+                    <hr class="ms_hr">
+                    <i class="fas fa-star"></i>
+                    <hr class="ms_hr"> 
+                </div>
                 <div class="wrapper_60">
                     <div class="container-fluid">
                         <div class="row">
-                            <h2>about</h2>
                             <p class="col-sm-6 col-xs-12 text-left">Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional SASS stylesheets for easy customization.</p>
                             <p class="col-sm-6 col-xs-12 text-left">You can create your own custom avatar for the masthead, change the icon in the dividers, and add your email address to the contact form to make it fully functional!</p>
                         </div>
@@ -100,15 +105,19 @@
 
             <!-- contact -->
             <section id="contact" class="contact">
+                <h2>contact me</h2>
+                <div class="black_text text-center">
+                    <hr class="ms_hr">
+                    <i class="fas fa-star"></i>
+                    <hr class="ms_hr"> 
                 <div class="wrapper_60">
                     <div class="container-fluid">
                         <div class="row">
-                            <h2>contact me</h2>
-                            <span>decorazione</span>
-                            <form>
+                            </div>
+                            <form class="text-left">
                                 <div class="form-group">
-                                  <label for="exampleInputEmail1"></label>
-                                  <input type="email" class="form-control ms_form" id="exampleInputEmail1" placeholder="Name">
+                                  <label for="Name"></label>
+                                  <input type="name" class="form-control ms_form" id="name" placeholder="Name">
                                 </div>
                                 <hr>
                                 <div class="form-group">
@@ -117,17 +126,16 @@
                                   </div>
                                   <hr>
                                 <div class="form-group">
-                                    <label for="exampleInputEmail1"></label>
-                                    <input type="email" class="form-control ms_form" id="exampleInputEmail1" placeholder="Phone Number">
+                                    <label for="phone"></label>
+                                    <input type="number" class="form-control ms_form" id="phone" placeholder="Phone Number">
                                   </div>
                                   <hr>
                                 <div class="form-group">
-                                    <label for="exampleInputEmail1"></label>
-                                    <input type="email" class="form-control ms_form" id="exampleInputEmail1" placeholder="Message">
+                                    <textarea class="form-control ms_form" rows="6" placeholder="Message"></textarea>
                                 </div>
                                 <hr>
                             
-                                <button type="submit" class="btn btn_send">Send</button>
+                                <button type="submit" class="btn btn-lg btn_send">Send</button>
                             </form>
                             </div>
                         </div>
@@ -148,10 +156,10 @@
                     <div class="col-lg-4 col-sm-4 col-xs-12">
                         <h3>around the web</h3>
                         <ul class="list-inline">
-                            <li><a href="">icona</a></li>
-                            <li><a href="">icona</a></li>
-                            <li><a href="">icona</a></li>
-                            <li><a href="">icona</a></li>
+                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
                         </ul>
                     </div>
                     <div class="col-lg-4 col-sm-4 col-xs-12">
@@ -163,8 +171,8 @@
             <!-- /upper footer -->
 
             <!-- credits -->
-            <div class="bg_darkgrey">
-                <p>Copyright &copy; Your Website 2020</p>
+            <div class="bg_darkgrey bottom_footer">
+                <p id="ms_copyright">Copyright &copy; Your Website 2020</p>
             </div>
             <!-- /credits -->
         </footer>
