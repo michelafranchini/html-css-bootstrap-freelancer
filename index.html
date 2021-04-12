@@ -5,36 +5,55 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css">
         <title>Start Bootstrap</title>
     </head>
     <body>
         <header class="white_text">
-            <!-- navbar -->
-            <nav>
+            <nav class="navbar ms_navbar">
                 <div class="container">
-                    <div class="row">
-                        <div class="col-lg-3 col-sm-4 col-xs-5">
-                            <a href="#">start bootstrap</a>
-                        </div>
-                        <div class="col-lg-4 col-lg-offset-5 col-sm-4 col-sm-offset-4 col-xs-1 col-xs-offset-6">
-                            <ul class="list-inline">
-                                <li><a href="#">portfolio</a></li>
-                                <li><a href="#">about</a></li>
-                                <li><a href="#">contact</a></li>
-                            </ul>
-                        </div>
+                  <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed burger_button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar icon_bar"></span>
+                        <span class="icon-bar icon_bar"></span>
+                        <span class="icon-bar icon_bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">start bootstrap</a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="#portfolio">portfolio</a></li>
+                            <li><a href="#about">about</a></li>
+                            <li><a href="#contact">contact</a></li>
+                        </ul>
                     </div>
                 </div>
-            </nav>
+              </nav>
             <!-- navbar -->
 
             <!-- jumbotron -->
-            <div class="jumbotron bg_green">
+            <div class="jumbotron bg_green text-center">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-8 col-lg-offset-2 col-sm-8 col-sm-offset-2 col-xs-12">
                             <img src="img/avatar.svg" alt="avatar" ">
+                            <div>
+                                <div class="ms_hr">
+                                    <hr>
+                                </div>
+                                <i class="fas fa-star"></i>
+                                <div class="ms_hr">
+                                    <hr>
+                                </div>
+                            </div>
                             <h1>start bootstrap</h1>
                             <p>Graphic Artist - Web Designer - Illustrator</p>
                         </div>
@@ -46,18 +65,18 @@
 
         <main>
             <!-- portfolio -->
-            <section>
+            <section id="portfolio" class="text-center">
                 <div class="container">
                     <div class="row">
                         <h2>portfolio</h2>
                         <span>decorazione</span>
                         <div class="images">
-                            <img src="img/cabin.png" alt="baita" class="col-lg-4 col-sm-6 img-responsive">
-                            <img src="img/cake.png" alt="cake" class="col-lg-4 col-sm-6 img-responsive">
-                            <img src="img/circus.png" alt="circus" class="col-lg-4 col-sm-6 img-responsive">
-                            <img src="img/game.png" alt="pad" class="col-lg-4 col-sm-6 img-responsive">
-                            <img src="img/safe.png" alt="safe" class="col-lg-4 col-sm-6 img-responsive">
-                            <img src="img/submarine.png" alt="sub" class="col-lg-4 col-sm-6 img-responsive">
+                            <img src="img/cabin.png" alt="baita" class="col-lg-4 col-sm-6 col-xs-12 img-responsive">
+                            <img src="img/cake.png" alt="cake" class="col-lg-4 col-sm-6 col-xs-12 img-responsive">
+                            <img src="img/circus.png" alt="circus" class="col-lg-4 col-sm-6 col-xs-12 img-responsive">
+                            <img src="img/game.png" alt="pad" class="col-lg-4 col-sm-6 col-xs-12 img-responsive">
+                            <img src="img/safe.png" alt="safe" class="col-lg-4 col-sm-6 col-xs-12 img-responsive">
+                            <img src="img/submarine.png" alt="sub" class="col-lg-4 col-sm-6 col-xs-12 img-responsive">
                         </div>
                     </div>
                 </div>
@@ -65,51 +84,68 @@
             <!-- /portfolio -->
 
             <!-- about -->
-            <section class="bg_green white_text">
-                <div class="container">
-                    <h2>about</h2>
-                    <span>decorazione</span>
-                    <div class="row">
-                        <p class="col-lg-5 col-lg-offset-1 col-sm-4 col-sm-offset-2">Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional SASS stylesheets for easy customization.</p>
-                        <p class="col-lg-5 col-sm-4">You can create your own custom avatar for the masthead, change the icon in the dividers, and add your email address to the contact form to make it fully functional!</p>
+            <section id="about" class="bg_green white_text text-center">
+                <div class="wrapper_60">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <h2>about</h2>
+                            <p class="col-sm-6 col-xs-12 text-left">Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional SASS stylesheets for easy customization.</p>
+                            <p class="col-sm-6 col-xs-12 text-left">You can create your own custom avatar for the masthead, change the icon in the dividers, and add your email address to the contact form to make it fully functional!</p>
+                        </div>
+                        <button type="button" class="btn btn-lg btn_download"><i class="fas fa-download"></i>Download</button>
                     </div>
-                    <a href="#">download</a>
                 </div>
             </section>
             <!-- /about -->
 
             <!-- contact -->
-            <section class="contact">
-                <div class="container">
-                    <h2>contact me</h2>
-                    <span>decorazione</span>
-                    <div class="row">
-                        <div class="form col-lg-10 col-lg-offset-1">
-                            <p>Name</p>
-                            <hr>
-                            <p>Email Adress</p>
-                            <hr>
-                            <p>Phone Number</p>
-                            <hr>
-                            <p>Message</p>
-                            <hr>
+            <section id="contact" class="contact">
+                <div class="wrapper_60">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <h2>contact me</h2>
+                            <span>decorazione</span>
+                            <form>
+                                <div class="form-group">
+                                  <label for="exampleInputEmail1"></label>
+                                  <input type="email" class="form-control ms_form" id="exampleInputEmail1" placeholder="Name">
+                                </div>
+                                <hr>
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1"></label>
+                                    <input type="email" class="form-control ms_form" id="exampleInputEmail1" placeholder="Email Adress">
+                                  </div>
+                                  <hr>
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1"></label>
+                                    <input type="email" class="form-control ms_form" id="exampleInputEmail1" placeholder="Phone Number">
+                                  </div>
+                                  <hr>
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1"></label>
+                                    <input type="email" class="form-control ms_form" id="exampleInputEmail1" placeholder="Message">
+                                </div>
+                                <hr>
+                            
+                                <button type="submit" class="btn btn_send">Send</button>
+                            </form>
+                            </div>
                         </div>
                     </div>
-                    <a href="#">Send</a>
                 </div>
             </section>
             <!-- /contact -->
         </main>
 
-        <footer class="white_text">
+        <footer class="white_text text-center">
             <!-- upper footer -->
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-4 col-sm-4">
+                    <div class="col-lg-4 col-sm-4 col-xs-12">
                         <h3>location</h3>
                         <p>2215 John Daniel Drive Clark, MO 65243</p>
                     </div>
-                    <div class="col-lg-4 col-sm-4">
+                    <div class="col-lg-4 col-sm-4 col-xs-12">
                         <h3>around the web</h3>
                         <ul class="list-inline">
                             <li><a href="">icona</a></li>
@@ -118,7 +154,7 @@
                             <li><a href="">icona</a></li>
                         </ul>
                     </div>
-                    <div class="col-lg-4 col-sm-4">
+                    <div class="col-lg-4 col-sm-4 col-xs-12">
                         <h3>about freelancer</h3>
                         <p>Freelance is a free to use, MIT licensed Bootstrap theme created by <span>Start Bootstrap</span>.</p>
                     </div>
@@ -132,6 +168,11 @@
             </div>
             <!-- /credits -->
         </footer>
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
     </body>
 </html>

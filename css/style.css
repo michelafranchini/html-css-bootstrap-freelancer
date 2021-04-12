@@ -1,40 +1,91 @@
 /* debug */
-[class*="col-"] {
+/* [class*="col-"] {
     background-color: aquamarine;
     border: 1px solid black;
     height: 100%;
+} */
+
+.ms_hr {
+    display: inline-block;
 }
 hr {
     border: 1px solid black;
 }
 /* debug */
 
-
-
 body {
-    text-align: center;
+    font-family: 'Lato', sans-serif;
 }
-.container {
-    max-width: 1170px;
+
+.wrapper_60 {
+    width: 60%;
+    margin: 0 auto;
 }
-h2 {
+
+h2, h3 {
     text-transform: uppercase;
 }
 
 .white_text {
     color: white;
 }
+
+h2 {
+    font-size: 50px;
+}
+
+#portfolio, 
+#about, 
+#contact {
+    padding: 50px 0;
+}
+
 /* header */
 header {
     text-transform: uppercase;
     width: 100%;
+    position: relative;
 }
+
+/* navbar */
+nav {
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+.ms_navbar {
+    background-color: #2c3e50;
+    margin: 0 auto;
+}
+
+.ms_navbar a {
+    text-transform: uppercase;
+    border-radius: 0px;
+    color: white;
+}
+
+.icon_bar {
+    background-color: #888888;
+}
+
+.burger_button {
+    border: 1px solid white;
+}
+
+@media screen and (min-width: 768px) {
+
+    .ms_navbar {
+        border-radius: 0 px;
+    }
+}
+
 nav,
 .bg_darkgrey {
     background-color: #2c3e50;
-    /* height: 80px; */
+    height: 80px;
 }
 
+ /* jumbotron */
 .bg_green {
     background-color: #1abc9c ;
 }
@@ -46,6 +97,12 @@ nav,
     text-decoration: none;
 }
 
+/* .jumbotron hr {
+    display: inline;
+} */
+
+
+
 /* portfolio */
 .images img {
     border-radius: 25px;
@@ -55,19 +112,49 @@ nav,
     display: block;
 }
 
+/* about */
+#about p {
+    font-size: 23px;
+    padding: 30px;
+}
+
+.btn_download {
+    background-color: #1abc9c;
+    border: 1px solid white;
+    color: white;
+}
+.fa-download {
+    margin-right: 10px;
+}
+
 /* contact */
+#contact h2 {
+    text-align: center;
+}
 .contact p {
     text-align: left;
 }
 
-
-.form :last-child {
-    margin-top: 150px;
+.ms_form {
+    border: none;
+    box-shadow: none;
 }
 
-.contact a {
-    text-align: left;
+.ms_form::placeholder {
+    color: black;
+    font-size: 20px;
 }
+
+form hr {
+    border-color: black;
+}
+
+.btn_send {
+    background-color: #1abc9c;
+    color: white;
+    font-size: 18px;
+}
+
 
 /* footer */
 footer {
